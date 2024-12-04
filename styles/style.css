@@ -1,0 +1,114 @@
+
+
+/* Content header */
+
+.contentHeader{
+    width: 100%;
+    height: 60px;
+    background-color:#0d6fd0 ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentHeader>.contentTittle{
+    width: 40%;
+    height: 40px;
+    /*background-color: palegreen;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentTittle >h1{
+    color: white;
+  }
+  /*Content Body*/
+  .contentBody{
+    width: 100%;
+    height: 840px;
+    background-color: #16b2ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .contentBody>.subContentBoody{
+    width: 60%;
+    height: 800px;
+    background-color: white;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .subContentBoody > .containerSpaceWord{
+    width: 90%;
+    height: 110px;
+    /*background-color: rgb(195, 255, 0);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .containerSpaceWord > .tittleWord{
+    width: 95%;
+    height: 50px;
+    /*background-color: bisque;*/
+  }
+  .containerSpaceWord > .spaceWord{
+    width: 95%;
+    height: 45px;
+    /*background-color: bisque;*/
+  }
+  .spaceWord > .spaceLetter{
+    border-radius: 5px;
+    width: 97%;
+    height: 25px;
+  }
+  .subContentBoody > .containerSelectTranslator{
+    width: 40%;
+    height: 50px;
+    /*background-color: rgb(9, 255, 0);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .subContentBoody > .containerButtomTranslate{
+    width: 90%;
+    height: 110px;
+    /*background-color: aqua;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+  }
+  .containerButtomTranslate > .buttomTranslate{
+    width: 90%;
+    height: 30px;
+    background-color: #0087e4;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  .subContentBoody > .containerDictionary{
+    width: 84%;
+    height: 400px;
+    /*background-color: blueviolet;*/
+  }
+  .containerWordsDictionary{
+    height: 220px;
+    line-height: 1rem;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    width: 100%;
+    border: 1px solid;
+  }
+  .subContentBoody > .containerNewWord{
+    width: 96%;
+    height: 90px;
+    /*background-color: chocolate;*/
+  }
+  
+    
