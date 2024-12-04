@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Traductor Interactivo</title>
+  <link rel="stylesheet" href="Styles/Style.css">
+</head>
+<body>
+  <header class="contentHeader">
+    <div class="contentTittle">
+        <h1>Traductor</h1>
+    </div>
+</header>
+  <main class="contentBody">
+    <section class="subContentBoody">
+      <section id="translator" class="containerSpaceWord">
+        <div class="tittleWord">
+          <h2>Ingrese una palabra<h2>
+        </div>
+        <div class="spaceWord">
+          <input type="text" id="wordInput" class="spaceLetter" placeholder="Ingresa una palabra">
+        </div>
+      </section>
+        <section id="languageSelect" class="containerSelectTranslator">
+          <p>Ingles a español</p>
+          <input type="radio" name="tipTranslate" value="en-to-es">
+          <p>Español a Ingles</p>
+          <input type="radio" name="tipTranslate" value="es-to-en">
+        </section>
+
+        <div class="containerButtomTranslate">
+          <button id="translateBtn" class="buttomTranslate">Traducir/Translate</button>
+          <p id="translationResult"></p>
+        </div>
+
+      <section id="dictionary" class="containerDictionary">
+        <h2>Diccionario</h2>
+        <button id="sortEnglish">Ordenar por Inglés</button>
+        <button id="sortSpanish">Ordenar por Español</button>
+        <div id="categories">
+          <h3>Categorías</h3>
+          <label><input type="radio" name="category" value="all" checked> Todas</label>
+          <label><input type="radio" name="category" value="animals"> Animales</label>
+          <label><input type="radio" name="category" value="fruits"> Frutas</label>
+          <label><input type="radio" name="category" value="colors"> Colores</label>
+          <label><input type="radio" name="category" value="physical_descriptions"> Descripciones físicas</label>
+          <label><input type="radio" name="category" value="skills"> Habilidades</label>
+          <label><input type="radio" name="category" value="verbs"> Verbos</label>
+        </div>
+        <section class="containerWordsDictionary">
+          <table id="wordTable">
+            <thead>
+              <tr>
+                <th>Inglés</th>
+                <th>Español</th>
+                <th>Ejemplo</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </section>
+      </section>
+
+
+      <section id="addWord" class="containerNewWord">
+        <h2>Agregar Nueva Palabra</h2>
+        <form id="addWordForm">
+          <input type="text" id="newEnglish" placeholder="Palabra en inglés" required>
+          <input type="text" id="newSpanish" placeholder="Palabra en español" required>
+          <input type="text" id="newExample" placeholder="Ejemplo de uso" required>
+          <select id="newCategory">
+            <option value="animals">Animales</option>
+            <option value="fruits">Frutas</option>
+            <option value="colors">Colores</option>
+            <option value="physical_descriptions">Descripciones físicas</option>
+            <option value="skills">Habilidades</option>
+            <option value="verbs">Verbos</option>
+          </select>
+          <button type="submit">Agregar</button>
+        </form>
+      </section>
+    </section>
+  </main>
+  <script type="module" src="Scripts/index.js"></script>
+</body>
+</html>
